@@ -95,7 +95,7 @@ async function authCheck(req, res, next){
 app.use(
     cors({
       // origin: "http://localhost:3000",
-      origin: "https://delete-frontend.onrender.com/",
+      origin: "https://delete-frontend.onrender.com",
       credentials: true,
     })
   );
