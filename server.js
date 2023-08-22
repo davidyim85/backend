@@ -217,14 +217,15 @@ app.post("/signup", async (req, res) => {
       // send a response with a cooke that includes the token
       res.cookie("token", token, {
         // can only be accessed by server requests
-        httpOnly: true,
+        // httpOnly: true,
+        httpOnly: false,
         // path = where the cookie is valid
         path: "/",
         // domain = what domain the cookie is valid on
         // domain: "localhost",
         domain: "onrender.com",
         // secure = only send cookie over https
-        secure: true,
+        secure: false,
         // sameSite = only send cookie if the request is coming from the same origin
         sameSite: "lax", // "strict" | "lax" | "none" (secure must be true)
         // maxAge = how long the cookie is valid for in milliseconds
