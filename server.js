@@ -219,7 +219,7 @@ app.post("/signup", async (req, res) => {
         // can only be accessed by server requests
         httpOnly: true,
         // path = where the cookie is valid
-        // path: "/",
+        path: "/",
         // domain = what domain the cookie is valid on
         // domain: "localhost",
         domain: "onrender.com",
